@@ -42,7 +42,7 @@ def registrar_comercio(request): # Vista para registrar un comercio
                 ])
             else:
                 wb = openpyxl.load_workbook(path_excel)
-                if 'Base de Datos' in wb.sheetnames:    
+                if 'BBDD' in wb.sheetnames:    
                     ws = wb['BBDD']
                 else:
                     ws = wb.active  # Selecciona la hoja activa si no existe 'Base de Datos'
