@@ -226,14 +226,14 @@ button:hover {
     <button type="submit">Registrar</button>
 </form>
 
-<a class="volver-link" href="{% url 'recomendador_home' %}">← Volver al recomendador</a>
+<a class="volver-link" href="{% url 'index' %}">← Volver al recomendador</a>
 
 {% if messages %}
     {% for message in messages %}
         {% if message.tags == 'success' %}
             <script>
                 setTimeout(function () {
-                    window.location.href = "{% url 'recomendador_home' %}";
+                    window.location.href = "{% url 'index' %}";
                 }, 4000);
             </script>
         {% endif %}
